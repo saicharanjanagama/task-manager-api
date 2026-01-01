@@ -20,11 +20,7 @@
 
 ## 🚀 Live API
 
-🔗 **Base URL**  
-https://task-manager-api-m5gv.onrender.com
-
-🔍 **Health Check**  
-https://task-manager-api-m5gv.onrender.com/api/health
+🔗 **Base URL**  [🗂️ Task Management API](https://task-manager-api-m5gv.onrender.com)
 
 ---
 
@@ -156,14 +152,26 @@ task-manager-api/
 
 ## 🧪 API Testing
 
-- All endpoints tested using Postman
-- Requests saved and exported as:
+- All API endpoints were tested using Postman
+- User authentication and JWT authorization flow verified
+- Full MongoDB CRUD operations validated
+- Protected routes tested with valid and invalid tokens
+- Error handling and edge cases validated
+
+All requests were saved and exported as a Postman collection:
 
 ```bash
 postman-collection.json
 ```
 
-- Collection included in the project root for easy import
+▶️ How to Test Using the Postman Collection
+1. Open Postman
+2. Click Import
+3. Select the file postman-collection.json from the project root
+4. Run authentication requests to obtain a JWT token
+5. Use the token to test protected task routes
+
+📌 The collection includes predefined request bodies, headers, and organized folders for easy testing.
 
 ---
 
@@ -171,8 +179,8 @@ postman-collection.json
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/saicharanjanagama/blog-api.git
-cd blog-api
+git clone https://github.com/saicharanjanagama/task-manager-api.git
+cd task-manager-api
 ```
 
 2. Install dependencies:
@@ -183,6 +191,7 @@ npm install
 3. Create .env file:
 ```bash
 PORT=3000
+MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
@@ -197,18 +206,20 @@ npm run dev
 
 | Day   | Task                               |
 | ----- | ---------------------------------- |
-| Day 1 | Node.js setup & npm initialization |
+| Day 1 | Node.js setup & MongoDB connection |
 | Day 2 | Express server & routing           |
-| Day 3 | CRUD operations for posts          |
+| Day 3 | MongoDB models & CRUD operations   |
 | Day 4 | JWT authentication                 |
-| Day 5 | Validation & error handling        |
+| Day 5 | Middleware & error handling        |
 | Day 6 | Postman documentation              |
 | Day 7 | Testing & deployment               |
+
 
 ---
 
 ## 📈 What This Project Demonstrates
 
+- MongoDB database integration
 - RESTful API design
 - Backend authentication & authorization
 - Middleware architecture
@@ -226,3 +237,9 @@ It’s me — **Sai Charan Janagama** 😄<br>
 🔗 [LinkedIn](https://www.linkedin.com/in/saicharanjanagama/) ↗<br>
 💻 [GitHub](https://github.com/SaiCharanJanagama) ↗
 
+---
+
+## 💬 Feedback
+
+If you have any feedback or suggestions, feel free to reach out!  
+Your input helps me improve 🚀
