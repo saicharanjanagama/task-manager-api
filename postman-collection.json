@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "bafe8680-ccdc-42c3-9147-c51ba6ed80be",
+		"name": "Task Manager API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51149614",
+		"_collection_link": "https://saic89738-223874.postman.co/workspace/Sai-Charan's-Workspace~16e77cac-1f74-465c-8b62-c8b86f6310c0/collection/51149614-bafe8680-ccdc-42c3-9147-c51ba6ed80be?action=share&source=collection_link&creator=51149614"
+	},
+	"item": [
+		{
+			"name": "https://task-manager-api-m5gv.onrender.com",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://task-manager-api-m5gv.onrender.com",
+					"protocol": "https",
+					"host": [
+						"task-manager-api-m5gv",
+						"onrender",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://task-manager-api-m5gv.onrender.com/api/users/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sai Charan\",\r\n  \"email\": \"saicharan29@example.com\",\r\n  \"password\": \"Password@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://task-manager-api-m5gv.onrender.com/api/users/register",
+					"protocol": "https",
+					"host": [
+						"task-manager-api-m5gv",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://task-manager-api-m5gv.onrender.com/api/users/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"saicharan29@example.com\",\r\n  \"password\": \"Password@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://task-manager-api-m5gv.onrender.com/api/users/login",
+					"protocol": "https",
+					"host": [
+						"task-manager-api-m5gv",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://task-manager-api-m5gv.onrender.com/api/tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTY4Y2I4NGM0OTgzYWU0MWMxMGZiYyIsImlhdCI6MTc2NzI3OTgwMCwiZXhwIjoxNzY3ODg0NjAwfQ.KQehozD8vXQNu8aPxchuUdfXPsdYuyKiFVzzhgqz2So",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Build Task Manager API\",\r\n  \"priority\": \"medium\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://task-manager-api-m5gv.onrender.com/api/tasks",
+					"protocol": "https",
+					"host": [
+						"task-manager-api-m5gv",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://task-manager-api-m5gv.onrender.com/api/tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTY4Y2I4NGM0OTgzYWU0MWMxMGZiYyIsImlhdCI6MTc2NzI3OTgwMCwiZXhwIjoxNzY3ODg0NjAwfQ.KQehozD8vXQNu8aPxchuUdfXPsdYuyKiFVzzhgqz2So",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://task-manager-api-m5gv.onrender.com/api/tasks",
+					"protocol": "https",
+					"host": [
+						"task-manager-api-m5gv",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://task-manager-api-m5gv.onrender.com/api/tasks/69568dbd4c4983ae41c10fc3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTY4Y2I4NGM0OTgzYWU0MWMxMGZiYyIsImlhdCI6MTc2NzI3OTgwMCwiZXhwIjoxNzY3ODg0NjAwfQ.KQehozD8vXQNu8aPxchuUdfXPsdYuyKiFVzzhgqz2So",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Build & Deploy Task Manager API\",\r\n  \"completed\": true,\r\n  \"priority\": \"high\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://task-manager-api-m5gv.onrender.com/api/tasks/69568dbd4c4983ae41c10fc3",
+					"protocol": "https",
+					"host": [
+						"task-manager-api-m5gv",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"69568dbd4c4983ae41c10fc3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://task-manager-api-m5gv.onrender.com/api/tasks/69568dbd4c4983ae41c10fc3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTY4Y2I4NGM0OTgzYWU0MWMxMGZiYyIsImlhdCI6MTc2NzI3OTgwMCwiZXhwIjoxNzY3ODg0NjAwfQ.KQehozD8vXQNu8aPxchuUdfXPsdYuyKiFVzzhgqz2So",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://task-manager-api-m5gv.onrender.com/api/tasks/69568dbd4c4983ae41c10fc3",
+					"protocol": "https",
+					"host": [
+						"task-manager-api-m5gv",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"69568dbd4c4983ae41c10fc3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
